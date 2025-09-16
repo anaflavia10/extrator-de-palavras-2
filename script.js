@@ -9,7 +9,7 @@ function mostraPalavraChave() {
     const compoResultado = document. querySelector("#resultado-palavrachave")
     const palavraChave = processaTexto(texto); 
         
-    compoResultado.textContent = palavra
+    compoResultado.textContent = palavra.join(";")
 }
 function processaTexto(texto) {
     let palavra = texto.split(/\P{L}+/U);
