@@ -1,3 +1,4 @@
+import { PALAVRAS_RUINS } from "./palavrasRuins.js";
 const { createContext } = require("react");
 
 const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
@@ -37,7 +38,6 @@ palavras = tiraPalavrasRuins(palavras);
     return palavras;
 }
 function tiraPalavraRuins (palavra) {
-    const PALAVRA_RUINS =new Set (["para", "uma", "nós"]);
     const palavrasBoas =[];
     for (let palavra of palavras) {
         if (!PALAVRA_RUINS . has(palavra) && palavra. length > 2 ) {
